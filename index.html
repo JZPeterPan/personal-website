@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Personal website - researcher/engineer portfolio" />
+    <meta name="author" content="Jiazhen Pan" />
+    <meta name="theme-color" content="#0ea5e9" />
+    <title>Jiazhen Pan— Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css?v=dev-10" />
+  </head>
+  <body>
+    <a class="skip-link" href="#about">跳到正文</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="Homepage">Jiazhen Pan</a>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-list" id="navList">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#news" class="nav-link">What's New</a></li>
+            <li><a href="#research" class="nav-link">Research</a></li>
+            <li><a href="#team" class="nav-link">Team</a></li>
+            <li><a href="#teaching" class="nav-link">Teaching</a></li>
+            <li><a href="#funders" class="nav-link">Funders</a></li>
+            <!-- <li><a href="#services" class="nav-link">Services</a></li> -->
+            <!-- <li><a href="#talks" class="nav-link">Talks</a></li> -->
+            <!-- <li><a href="#contact" class="nav-link">Contact</a></li> -->
+          </ul>
+        </nav>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="切换主题" title="主题">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.64 5.64l1.41 1.41m9.9 9.9l1.41 1.41m0-12.72l-1.41 1.41m-9.9 9.9l-1.41 1.41"/>
+            <circle cx="12" cy="12" r="4"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-avatar">
+            <div class="avatar-container">
+              <img src="./assets/img/peter_pan2.png" alt="Avatar" />
+            </div>
+            <div class="socials">
+              <a class="social" href="https://scholar.google.com/citations?user=3ajAndQAAAAJ&hl=de&oi=ao" aria-label="Google Scholar" target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M 11 4 L 3 9 L 8.4921875 9 C 8.4715892 9.0754986 8.4383718 9.1441171 8.421875 9.2226562 C 8.375875 9.4646562 8.3398437 9.7308125 8.3398438 10.007812 C 8.3398438 13.578812 11.990234 13.175781 11.990234 13.175781 L 11.990234 14.085938 C 11.990234 14.454937 12.47425 14.327172 12.53125 15.076172 C 12.28925 15.076172 7.4746094 14.937547 7.4746094 18.185547 C 7.4746094 21.445547 11.724609 21.285156 11.724609 21.285156 C 11.724609 21.285156 16.632812 21.504656 16.632812 17.472656 C 16.634813 15.063656 13.822266 14.2795 13.822266 13.3125 C 13.822266 12.3335 15.941406 12.045906 15.941406 9.7539062 C 15.941406 8.7519062 15.872828 8.03825 15.423828 7.53125 C 15.388828 7.49625 15.366031 7.4722188 15.332031 7.4492188 C 15.324304 7.4420199 15.31448 7.4367774 15.306641 7.4296875 L 15.429688 7.4296875 L 17.5 5.8769531 L 17.5 8 A 0.50005 0.50005 0 0 0 17.511719 8.1152344 A 1.0001 1.0001 0 0 0 17 9 L 17 10 A 1.0001 1.0001 0 1 0 19 10 L 19 9 A 1.0001 1.0001 0 0 0 18.488281 8.1152344 A 0.50005 0.50005 0 0 0 18.5 8 L 18.5 5.125 L 20 4 L 11 4 z M 11.691406 7.0527344 C 11.979219 7.0397031 12.268922 7.109625 12.544922 7.265625 C 12.751922 7.369625 12.946141 7.518125 13.119141 7.703125 C 13.476141 8.060125 13.7765 8.5784531 13.9375 9.1894531 C 14.3175 10.640453 13.823828 12.035781 12.798828 12.300781 C 11.784828 12.587781 10.654672 11.641172 10.263672 10.201172 C 10.090672 9.4991719 10.114547 8.8202969 10.310547 8.2792969 C 10.312395 8.2723193 10.316443 8.2666961 10.318359 8.2597656 C 10.321722 8.2581149 10.32682 8.253536 10.330078 8.2519531 C 10.386262 8.0380596 10.478099 7.8461668 10.589844 7.6875 C 10.795388 7.3872165 11.066477 7.1838352 11.404297 7.09375 C 11.499297 7.07075 11.595469 7.0570781 11.691406 7.0527344 z M 12.082031 15.685547 C 13.775031 15.558547 15.216313 16.490813 15.320312 17.757812 C 15.390313 19.013813 14.087812 20.131094 12.382812 20.246094 C 10.689813 20.361094 9.2274844 19.441547 9.1464844 18.185547 C 9.0654844 16.918547 10.377031 15.812547 12.082031 15.685547 z"/>
+                </svg>
+                <span class="social-text">Scholar</span>
+              </a>
+              <a class="social" href="https://www.linkedin.com/in/jzpeterpan/" aria-label="LinkedIn" target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                <span class="social-text">LinkedIn</span>
+              </a>
+              <a class="social" href="mailto:jiazhen.pan@tum.de" aria-label="Email">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <span class="social-text">Email</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-content">
+            <h1 class="title">Jiazhen Pan </h1>
+            <p class="subtitle">Being a second-derivative meta-learner.</p>
+            <p class="description">
+              Hey there, I am JZ Peter Pan, flying and rapping my verse in the field of AI in Medicine. I am a project-leading postdoctoral researcher at the Technical University of Munich and <a href="https://www.kiinformatik.mri.tum.de/en/chair-artificial-intelligence-healthcare-and-medicine" target="_blank" rel="noopener">AI in Medicine Lab</a>, working together with <a href="https://www.professoren.tum.de/rueckert-daniel" target="_blank" rel="noopener">Daniel Rueckert</a> and <a href="https://www.professoren.tum.de/en/wiestler-benedikt" target="_blank" rel="noopener">Benedikt Wiestler</a>. 
+              <br>
+              <br>
+              My research mission is to leverage our AI expertise to tackle foundational challenges in healthcare and ensure that as AI models (LLMs/VLMs) become increasingly powerful, they can be deployed safely, reliably, and ethically in high-stakes clinical environments. To this end, I lead a research thrust and supervise several Ph.D. students focused on the core challenge of AI trustworthiness. My work spans two key pillars:
+              <br>
+              <br>
+              <strong>1. Trustworthy Medical AI:</strong> I specialize in evaluating and enhancing the reasoning capabilities of large AI models. My approach involves developing novel adversarial attacks and rigorous audit frameworks ("red-teaming") to uncover and mitigate failure modes before they can cause harm.
+              <br>
+              <br>
+              <strong>2. Advanced Medical Imaging:</strong> My research is also deeply rooted in technical expertise in medical imaging. I apply representation learning and generative models to tackle complex problems such as accelerated MR reconstruction, 3D/4D volume reconstruction, image analysis, and diagnosis. This body of work provides the technical foundation for my current efforts to enhance medical image reliability.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="news" class="section">
+        <div class="container">
+          <h2 class="section-title">What's New</h2>
+          <ul class="timeline">
+            <li>
+              <span class="time">2025-08</span>
+              <span class="event">Our work <a href="https://arxiv.org/pdf/2502.07143" target="_blank" rel="noopener" class="timeline-link"> Ask Patient with Patience</a> is accepted at EMNLP!</span>
+            </li>
+            
+            <li>
+              <span class="time">2025-08</span>
+              <span class="event">DAS Medical Red-Teaming is released! <a href="https://github.com/JZPeterPan/DAS-Medical-Red-Teaming-Agents" target="_blank" rel="noopener" class="timeline-link"> [Code]</a> We propose a dynamic framework to systematically audit medical LLMs.</span>
+            </li>
+            <li>
+              <span class="time">2025-07</span>
+              <span class="event">Our work on <a href="https://www.sciencedirect.com/science/article/pii/S1361841525003032" target="_blank" rel="noopener" class="timeline-link">Cardiac MR Foundation Models</a> is accepted at Medical Image Analysis!</span>
+            </li>
+            <li>
+              <span class="time">2025-05</span>
+              <span class="event">Our Medical VLM reasoning models <a href="https://arxiv.org/pdf/2502.19634" target="_blank" rel="noopener" class="timeline-link">MedVLM-R1</a> is early accepted at MICCAI 2025 (among the top 9% of 3667 submissions)! </span>
+            </li>
+            <li>
+              <span class="time">2025-02</span>
+              <span class="event">Invited to give a talk at <a href="https://docs.nvidia.com/aerial-1.2-newurl/aerial-ran-colab-ota/current/text/radar_tech_talks.html" target="_blank" rel="noopener" class="timeline-link">NVIDIA Radar Tech Talk</a> about AI application in Cardiac MR Imaging.</span>
+            </li>
+            <li>
+              <span class="time">2025-01</span>
+              <span class="event">I will visit the <a href="https://ibme.ox.ac.uk/research/biomedical-image-analysis/" target="_blank" rel="noopener" class="timeline-link">Biomedical Image Analysis (BioMedIA) lab</a> at the Univerisity of Oxford from Jan to Mar 2025.</span>
+            </li>
+            <li>
+              <span class="time">2024-10</span>
+              <span class="event">Our <a href="https://link.springer.com/chapter/10.1007/978-3-031-72378-0_34" target="_blank" rel="noopener" class="timeline-link">Cardiac representation learning work</a> is invited for an oral presentation at MICCAI 2024!</span>
+            </li>
+            <li>
+              <span class="time">2024-07</span>
+              <span class="event">Our review work about <a href="https://arxiv.org/abs/2407.19274" target="_blank" rel="noopener" class="timeline-link">Mamba</a> is accepted at Workshop on Biomedical Image Registration (WBIR) 2024 and selected as an oral presentation!</span>
+            </li>
+            <li>
+              <span class="time">05/2024</span>
+              <span class="event">Our work <a href="https://arxiv.org/abs/2406.00329" target="_blank" rel="noopener" class="timeline-link">Whole Heart 3D+T Representation Learning Through Sparse 2D Cardiac MR Images</a> got early accepted at MICCAI 2024!</span>
+            </li>
+            <li>
+              <span class="time">03/2024</span>
+              <span class="event">Two papers (<a href="https://ieeexplore.ieee.org/document/10436641" target="_blank" rel="noopener" class="timeline-link">Reconstruction-driven motion estimation</a> and <a href="https://ieeexplore.ieee.org/abstract/document/10491317" target="_blank" rel="noopener" class="timeline-link">Registration in undersampled MRI</a>) are accepted at IEEE TMI!</span>
+            </li>
+            <li>
+              <span class="time">02/2024</span>
+              <span class="event">Paper <a href="https://ieeexplore.ieee.org/abstract/document/10635282" target="_blank" rel="noopener" class="timeline-link">Direct Cardiac Segmentation from Undersampled K-space Using Transformers</a> is accepted at IEEE ISBI 2024.</span>
+            </li>
+            <li>
+              <span class="time">02/2024</span>
+              <span class="event">Invited to give a talk about MR Reconstruction at <a href="https://orbem.ai" target="_blank" rel="noopener" class="timeline-link">Orbem, Munich</a>.</span>
+            </li>
+            <li>
+              <span class="time">12/2023</span>
+              <span class="event">Paper <a href="https://www.sciencedirect.com/science/article/pii/S1361841523002773" target="_blank" rel="noopener" class="timeline-link">Unrolled and rapid motion-compensated reconstruction for cardiac CINE MRI</a> is accepted at Medical Image Analysis.</span>
+            </li>
+            <li>
+              <span class="time">07/2023</span>
+              <span class="event">Invited to give a talk of Motion-compensated MR Reconstruction at <a href="#" target="_blank" rel="noopener" class="timeline-link">CardioMRI Symposium, Munich</a>.</span>
+            </li>
+            <li>
+              <span class="time">06/2023</span>
+              <span class="event">Three papers got accepted at MICCAI 2023!</span>
+            </li>
+            <li>
+              <span class="time">03/2023</span>
+              <span class="event">Invited to give a talk at <a href="https://www.medizin.uni-tuebingen.de/en-de/startseite" target="_blank" rel="noopener" class="timeline-link">University Hospital of Tübingen</a>.</span>
+            </li>
+            <li>
+              <span class="time">02/2023</span>
+              <span class="event">Paper <a href="https://arxiv.org/pdf/2212.08479" target="_blank" rel="noopener" class="timeline-link">Neural Implicit k-Space for Binning-free Non-Cartesian Cardiac MR Imaging</a> got accepted to IPMI 2023. Congrats to Wenqi!</span>
+            </li>
+            <li>
+              <span class="time">09/2022</span>
+              <span class="event">Young scientist award finalist at MICCAI 2022!</span>
+            </li>
+            <li>
+              <span class="time">05/2022</span>
+              <span class="event">Paper <a href="https://arxiv.org/pdf/2209.03671" target="_blank" rel="noopener" class="timeline-link">Learning-based and unrolled motion-compensated reconstruction for cardiac MR CINE imaging</a> got early accepted (top 10%) at MICCAI 2022.</span>
+            </li>
+            <li>
+              <span class="time">05/2022</span>
+              <span class="event"><a href="https://cds.ismrm.org/protected/22MProceedings/Content/PDF/Magna.pdf" target="_blank" rel="noopener" class="timeline-link">Magna Cum Laude</a> (top 3%) at ISMRM 2022. WoW 🎉🎉🎉!</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="research" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Research Topics</h2>
+          <p class="section-description">I focus on the following four subfields of AI in Medicine, with some representative works highlighted below.</p>
+          <div class="research-tabs" role="tablist" aria-label="Research topics">
+            <button class="research-tab is-active" role="tab" aria-selected="true" data-topic="llms">LLMs & Agents</button>
+            <button class="research-tab" role="tab" aria-selected="false" data-topic="multimodal">Multimodal Medical Imagings</button>
+            <button class="research-tab" role="tab" aria-selected="false" data-topic="generative">Medical Generative Models</button>
+            <button class="research-tab" role="tab" aria-selected="false" data-topic="reconstruction">Accelerated MR Reconstruction</button>
+          </div>
+
+          <ul class="pub-list research-list" id="researchList">
+            <!-- <li class="pub-item" data-topics="llms">
+              <div class="pub-content">
+                <div class="pub-image">
+                  <img src="./assets/img/goodhart.png" alt="CollabLLM Overview" />
+                </div>
+                <div class="pub-details">
+                  <div class="pub-title">CollabLLM: From Passive Responders to Active Collaborators</div>
+                  <div class="pub-authors">Shirley Wu, et al.</div>
+                  <div class="pub-venue"><span class="badge">ICML 2025 (Oral)</span></div>
+                  <div class="pub-links">
+                    <a href="#" target="_blank" rel="noopener">Website</a>
+                    <a href="#" target="_blank" rel="noopener">Paper</a>
+                    <a href="#" target="_blank" rel="noopener">GitHub</a>
+                    <a href="#" target="_blank" rel="noopener">Twitter</a>
+                    <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </li> -->
+            <li class="pub-item" data-topics="llms">
+              <div class="pub-content">
+                <div class="pub-image">
+                  <img src="./assets/img/DAS.png" alt="DAS Medical Red-Teaming" />
+                </div>
+                <div class="pub-details">
+                  <div class="pub-title">Beyond Benchmarks: Dynamic, Automatic And Systematic Red-Teaming Agents For Trustworthy Medical Language Models</div>
+                  <div class="pub-authors"><strong>Jiazhen Pan</strong>*, Bailiang Jian*, Paul Hager, Yundi Zhang, Che Liu, Friederike Jungmann, Hongwei Bran Li, Chenyu You, Junde Wu, Jiayuan Zhu, Fenglin Liu, Yuyuan Liu, Niklas Bubeck, Christian Wachinger, Zhenyu Gong, Cheng Ouyang, Georgios Kaissis, Benedikt Wiestler, Daniel Rueckert</div>
+                  <div class="pub-venue"><span class="badge">Preprint 2025</span></div>
+                  <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2508.00923" target="_blank" rel="noopener">Paper</a>
+                    <a href="https://github.com/JZPeterPan/DAS-Medical-Red-Teaming-Agents" target="_blank" rel="noopener">Code</a>
+                    <a href="https://huggingface.co/datasets/JZPeterPan/DAS-Mediacal-Red-Teaming-Data" target="_blank" rel="noopener">HuggingFace</a>
+                    <a href="https://www.linkedin.com/posts/jzpeterpan_medai-aisafety-healthcareai-activity-7363830294694535168-IiI8?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACumgkoBse5F4W7zxdd4ZaoMNk7LWx26SoU" target="_blank" rel="noopener">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="pub-item" data-topics="llms">
+              <div class="pub-content">
+                <div class="pub-image">
+                  <img src="./assets/img/APP.png" alt="APP" />
+                </div>
+                <div class="pub-details">
+                  <div class="pub-title">Ask Patients with Patience: Enabling LLMs for Human-Centric Medical Dialogue with Grounded Reasoning</div>
+                  <div class="pub-authors">Jiayuan Zhu, <strong>Jiazhen Pan</strong>, Fenglin Liu, Yuyuan Liu, Junde Wu</div>
+                  <div class="pub-venue"><span class="badge">EMNLP 2025</span></div>
+                  <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2502.07143" target="_blank" rel="noopener">Paper</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="pub-item" data-topics="llms">
+              <div class="pub-content">
+                <div class="pub-image">
+                  <img src="./assets/img/AlphaMed.jpeg" alt="Minimalist Rule-Based RL for Medical LLMs" />
+                </div>
+                <div class="pub-details">
+                  <div class="pub-title">Beyond Distillation: Pushing the Limits of Medical LLM Reasoning with Minimalist Rule-Based RL</div>
+                  <div class="pub-authors">Che Liu*, Haozhe Wang*, <strong>Jiazhen Pan</strong>*, Zhongwei Wan, Yong Dai, Fangzhen Lin, Wenjia Bai, Daniel Rueckert, Rossella Arcucci</div>
+                  <div class="pub-venue"><span class="badge">Preprint 2025</span></div>
+                  <div class="pub-links">
+                    <a href="https://cheliu-computation.github.io/AlphaM/" target="_blank" rel="noopener">Website</a>
+                    <a href="https://arxiv.org/abs/2505.17952" target="_blank" rel="noopener">Paper</a>
+                    <a href="https://huggingface.co/collections/che111/alphamed-68308110ce161e1e0010738c" target="_blank" rel="noopener">HuggingFace</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="pub-item" data-topics="llms">
+              <div class="pub-content">
+                <div class="pub-image">
+                  <img src="./assets/img/MedVLM-R1.jpg" alt="MedVLM-R1" />
+                </div>
+                <div class="pub-details">
+                  <div class="pub-title">MedVLM-R1: Incentivizing Medical Reasoning Capability of Vision-Language Models (VLMs) via Reinforcement Learning</div>
+                  <div class="pub-authors"><strong>Jiazhen Pan</strong>*, Che Liu*, Junde Wu, Fenglin Liu, Jiayuan Zhu, Hongwei Bran Li, Chen Chen, Cheng Ouyang, Daniel Rueckert</div>
+                  <div class="pub-venue"><span class="badge">MICCAI 2025 (Early Acceptance)</span></div>
+                  <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2502.19634" target="_blank" rel="noopener">Paper</a>
+                    <a href="https://huggingface.co/JZPeterPan/MedVLM-R1" target="_blank" rel="noopener">HuggingFace</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="pub-item" data-topics="multimodal">
+              <div class="pub-content">
+                <div class="pub-image">
+                  <img src="./assets/img/ViTa.png" alt="Cardiac Foundation Models" />
+                </div>
+                <div class="pub-details">
+                  <div class="pub-title">Towards Cardiac MRI Foundation Models: Comprehensive Visual-Tabular Representations for Whole-Heart Assessment and Beyond</div>
+                  <div class="pub-authors">Yundi Zhang, Paul Hager, Che Liu, Suprosanna Shit, Chen Chen, Daniel Rueckert, <strong>Jiazhen Pan</strong></div>
+                  <div class="pub-venue"><span class="badge">Medical Image Analysis 2025</span></div>
+                  <div class="pub-links">
+                    <a href="https://www.sciencedirect.com/science/article/pii/S1361841525003032" target="_blank" rel="noopener">Paper</a>
+                    <a href="https://github.com/Yundi-Zhang/ViTa" target="_blank" rel="noopener">Code</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="pub-item" data-topics="multimodal">
+              <div class="pub-content">
+                <div class="pub-image">
+                  <img src="./assets/img/CardRepre.png" alt="Cardiac Representation Learning" />
+                </div>
+                <div class="pub-details">
+                  <div class="pub-title">Whole Heart 3D+T Representation Learning Through Sparse 2D Cardiac MR Images</div>
+                  <div class="pub-authors">Yundi Zhang, Chen Chen, Suprosanna Shit, Sophie Starck, Daniel Rueckert, <strong>Jiazhen Pan</strong></div>
+                  <div class="pub-venue"><span class="badge">MICCAI 2024 (Oral and Best Paper Finalist)</span></div>
+                  <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2406.00329" target="_blank" rel="noopener">Paper</a>
+                    <a href="https://github.com/Yundi-Zhang/WholeHeartRL" target="_blank" rel="noopener">Code</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="pub-item" data-topics="generative">
+              <div class="pub-content">
+                <div class="pub-image">
+                  <img src="./assets/img/calid.png" alt="Latent Interpolation Learning" />
+                </div>
+                <div class="pub-details">
+                  <div class="pub-title">Latent Interpolation Learning Using Diffusion Models for Cardiac Volume Reconstruction</div>
+                  <div class="pub-authors">Niklas Bubeck, Suprosanna Shit, Chen Chen, Can Zhao, Pengfei Guo, Dong Yang, Georg Zitzlsberger, Daguang Xu, Bernhard Kainz, Daniel Rueckert, <strong>Jiazhen Pan</strong></div>
+                  <div class="pub-venue"><span class="badge">Preprint 2025</span></div>
+                  <div class="pub-links">
+                    <a href="https://arxiv.org/pdf/2508.13826" target="_blank" rel="noopener">Paper</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="pub-item" data-topics="generative">
+              <div class="pub-content">
+                <div class="pub-image">
+                  <img src="./assets/img/reconvsgen.png" alt="Recon vs. Generation" />
+                </div>
+                <div class="pub-details">
+                  <div class="pub-title">Reconstruct or Generate: Exploring the Spectrum of Generative Modeling for Cardiac MRI</div>
+                  <div class="pub-authors">Niklas Bubeck, Yundi Zhang, Suprosanna Shit, Daniel Rueckert, <strong>Jiazhen Pan</strong></div>
+                  <div class="pub-venue"><span class="badge">MICCAI 2025 (Deep Generative Models Oral)</span></div>
+                  <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2507.19186" target="_blank" rel="noopener">Paper</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="pub-item" data-topics="generative">
+              <div class="pub-content">
+                <div class="pub-image">
+                  <img src="./assets/img/TimeFlow.png" alt="TimeFlow" />
+                </div>
+                <div class="pub-details">
+                  <div class="pub-title">TimeFlow: Longitudinal Brain Image Registration and Aging Progression Analysis</div>
+                  <div class="pub-authors">Bailiang Jian, <strong>Jiazhen Pan</strong>, Yitong Li, Fabian Bongratz, Ruochen Li, Daniel Rueckert, Benedikt Wiestler, Christian Wachinger</div>
+                  <div class="pub-venue"><span class="badge">Preprint 2025</span></div>
+                  <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2501.08667" target="_blank" rel="noopener">Paper</a>
+                    <a href="https://github.com/BailiangJian/TimeFlow" target="_blank" rel="noopener">Code</a>
+                  </div>
+                </div>
+              </div>
+            <li class="pub-item" data-topics="reconstruction">
+              <div class="pub-content">
+                <div class="pub-image">
+                  <img src="./assets/img/Unroll.png" alt="Unrolled Motion-compensated Reconstruction" />
+                </div>
+                <div class="pub-details">
+                  <div class="pub-title">Unrolled and Rapid Motion-compensated Reconstruction for Cardiac CINE MRI</div>
+                  <div class="pub-authors"><strong>Jiazhen Pan</strong>, Manal Hamdi, Wenqi Huang, Kerstin Hammernik, Thomas Kuestner, Daniel Rueckert</div>
+                  <div class="pub-venue"><span class="badge">Medical Image Analysis 2024</span></div>
+                  <div class="pub-links">
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S1361841523002773" target="_blank" rel="noopener">Paper</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </li>
+          <li class="pub-item" data-topics="reconstruction">
+            <div class="pub-content">
+              <div class="pub-image">
+                <img src="./assets/img/Unified3.png" alt="Reconstruction-driven Motion Estimation" />
+              </div>
+              <div class="pub-details">
+                <div class="pub-title">Reconstruction-driven Motion Estimation for Motion-compensated MR CINE</div>
+                <div class="pub-authors"><strong>Jiazhen Pan</strong>, Wenqi Huang, Daniel Rueckert, Thomas Kuestner, Kerstin Hammernik</div>
+                <div class="pub-venue"><span class="badge">Transactions on Medical Imaging 2024</span></div>
+                <div class="pub-links">
+                  <a href="https://ieeexplore.ieee.org/document/10436641" target="_blank" rel="noopener">Paper</a>
+                  <a href="https://github.com/JZPeterPan/MCMR-Recon-Driven-Motion" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="pub-item" data-topics="reconstruction">
+            <div class="pub-content">
+              <div class="pub-image">
+                <img src="./assets/img/k-GIN2.png" alt="k-GIN" />
+              </div>
+              <div class="pub-details">
+                <div class="pub-title">Global k-Space Interpolation for Dynamic MRI Reconstruction Using Masked Image Modeling</div>
+                <div class="pub-authors"><strong>Jiazhen Pan</strong>, Suprosanna Shit, Özgün Turgut, Wenqi Huang, Hongwei Bran Li, Nil Stolt-Ansó, Thomas Küstner, Kerstin Hammernik & Daniel Rueckert</div>
+                <div class="pub-venue"><span class="badge">MICCAI 2023 (Best Paper Finalist)</span></div>
+                <div class="pub-links">
+                  <a href="https://jzpeterpan.github.io/k-gin.github.io/" target="_blank" rel="noopener">Website</a>
+                  <a href="https://arxiv.org/abs/2307.12672" target="_blank" rel="noopener">Paper</a>
+                  <a href="https://github.com/JZPeterPan/k-gin" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="pub-item" data-topics="reconstruction">
+            <div class="pub-content">
+              <div class="pub-image">
+                <img src="./assets/img/NIKS.png" alt="NIKS" />
+              </div>
+              <div class="pub-details">
+                <div class="pub-title">Neural Implicit k-Space for Binning-Free Non-Cartesian Cardiac MR Imaging</div>
+                <div class="pub-authors">Wenqi Huang, Hongwei Li, <strong>Jiazhen Pan</strong>,, Gastao Cruz, Daniel Rueckert, Kerstin Hammernik</div>
+                <div class="pub-venue"><span class="badge">IPMI 2023</span></div>
+                <div class="pub-links">
+                  <a href="https://arxiv.org/pdf/2212.08479" target="_blank" rel="noopener">Paper</a>
+                  <a href="https://github.com/wenqihuang/NIK_MRI" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section id="team" class="section">
+        <div class="container">
+          <h2 class="section-title">Team</h2>
+          <p class="team-intro">I am fortunate to work with these talented researchers and students.</p>
+          <div class="team">
+            <div class="team-item" data-url="https://scholar.google.de/citations?user=1FXD4IcAAAAJ&hl=en&oi=sra">
+              <div class="team-avatar">
+                <img src="./assets/img/yundi.jpeg" alt="Yundi Zhang" />
+              </div>
+              <div class="team-content">
+                <div class="team-info">
+                  <div class="team-name">Yundi Zhang</div>
+                  <div class="team-role">PhD Student</div>
+                  <div class="team-desc">Multimodal Medical Imaging</div>
+                  <div class="team-period">2023 - Present</div>
+                </div>
+              </div>
+            </div>
+            <div class="team-item" data-url="https://www.linkedin.com/in/niklas-bubeck/">
+              <div class="team-avatar">
+                <img src="./assets/img/Bubeck.jpeg" alt="Niklas Bubeck" />
+              </div>
+              <div class="team-content">
+                <div class="team-info">
+                  <div class="team-name">Niklas Bubeck</div>
+                  <div class="team-role">PhD Student</div>
+                  <div class="team-desc">Generative Models in Medical Imaging</div>
+                  <div class="team-period">2024 - Present</div>
+                </div>
+              </div>
+            </div>
+            <div class="team-item" data-url="https://www.linkedin.com/in/johannes-moll-ba7160203/">
+              <div class="team-avatar">
+                <img src="./assets/img/Moll.jpeg" alt="Johannes Moll" />
+              </div>
+              <div class="team-content">
+                <div class="team-info">
+                  <div class="team-name">Johannes Moll</div>
+                  <div class="team-role">PhD Student</div>
+                  <div class="team-desc">LLMs/VLMs Reasoning</div>
+                  <div class="team-period">2025 - Present</div>
+                </div>
+              </div>
+            </div>
+            <div class="team-item" data-url="https://www.linkedin.com/in/chengzhi-shen/">
+              <div class="team-avatar">
+                <img src="./assets/img/shen.jpeg" alt="Chengzhi Shen" />
+              </div>
+              <div class="team-content">
+                <div class="team-info">
+                  <div class="team-name">Chengzhi Shen</div>
+                  <div class="team-role">PhD Student</div>
+                  <div class="team-desc">AI Safety and Red-Teaming</div>
+                  <div class="team-period">2025 - Present</div>
+                </div>
+              </div>
+            </div>
+            <div class="team-item" data-url="https://www.linkedin.com/in/aleksandr-gorbunov/">
+              <div class="team-avatar">
+                <img src="./assets/img/grob.jpeg" alt="Aleksandr Gorbunov" />
+              </div>
+              <div class="team-content">
+                <div class="team-info">
+                  <div class="team-name">Aleksandr Gorbunov</div>
+                  <div class="team-role">Master Student</div>
+                  <div class="team-desc">MR Imaging Agents</div>
+                  <div class="team-period">2025 - Present</div>
+                </div>
+              </div>
+            </div>
+           </div>
+           
+           <h3 class="subsection-title">Alumni</h3>
+           <div class="team">
+             <div class="team-item" data-url="https://www.linkedin.com/in/aleksandar-roncevic/">
+               <div class="team-avatar">
+                 <img src="./assets/img/alek.jpeg" alt="Alumni Member" />
+               </div>
+               <div class="team-content">
+                 <div class="team-info">
+                   <div class="team-name">Aleksandar Rončević</div>
+                   <div class="team-role">Former Master Student</div>
+                   <div class="team-desc">Now: PhD Student at Vienna University of Technology</div>
+                   <div class="team-period">TUM Graduate 2025</div>
+                 </div>
+               </div>
+             </div>
+             <div class="team-item" data-url="https://www.linkedin.com/in/haozhuang-chi/">
+              <div class="team-avatar">
+                <img src="./assets/img/chi.jpeg" alt="Alumni Member" />
+              </div>
+              <div class="team-content">
+                <div class="team-info">
+                  <div class="team-name">Haozhuang Chi</div>
+                  <div class="team-role">Former Master Student</div>
+                  <div class="team-desc">Now: PhD at Nanyang Technological University</div>
+                  <div class="team-period">TUM Graduate 2023</div>
+                </div>
+              </div>
+            </div>
+            <div class="team-item" data-url="https://www.linkedin.com/in/manal-hamdi-42001216a/">
+              <div class="team-avatar">
+                <img src="./assets/img/manal.jpeg" alt="Alumni Member" />
+              </div>
+              <div class="team-content">
+                <div class="team-info">
+                  <div class="team-name">Manal Hamdi</div>
+                  <div class="team-role">Former Master Student</div>
+                  <div class="team-desc">Now: Google Inc.</div>
+                  <div class="team-period">TUM Graduate 2023</div>
+                </div>
+              </div>
+            </div>
+            <div class="team-item" data-url="https://www.linkedin.com/company/roboverse-reply/">
+              <div class="team-avatar">
+                <img src="./assets/img/brokmeier.jpeg" alt="Alumni Member" />
+              </div>
+              <div class="team-content">
+                <div class="team-info">
+                  <div class="team-name">Jonas Brokmeier</div>
+                  <div class="team-role">Former Master Student</div>
+                  <div class="team-desc">Now: Robotics Startup</div>
+                  <div class="team-period">TUM Graduate 2022</div>
+                </div>
+              </div>
+            </div>
+           </div>
+         </div>
+       </section>
+
+      <section id="teaching" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Teaching</h2>
+        <ul class="services">
+          <li>2025 Winter Term: TBD</li>
+            <li>2024 Summer Term: Lecturer @ <a href="https://www.kiinformatik.mri.tum.de/en/chair-artificial-intelligence-healthcare-and-medicine/teaching" target="_blank" rel="noopener">Artificial Intelligence in Medicine II</a></li>
+            <li>2023 Summer Term: Teaching Assistant @ <a href="https://www.kiinformatik.mri.tum.de/en/chair-artificial-intelligence-healthcare-and-medicine/teaching" target="_blank" rel="noopener">Artificial Intelligence in Medicine II</a></li>
+            <li>2023 Summer Term: Teaching Assistant @ <a href="https://www.kiinformatik.mri.tum.de/en/chair-artificial-intelligence-healthcare-and-medicine/teaching" target="_blank" rel="noopener">Deep Learning for Inverse Problems</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="funders" class="section">
+        <div class="container">
+          <h2 class="section-title">Funders and Collaborators</h2>
+          <div class="funders-grid">
+            <div class="funder-item">
+              <img src="./assets/img/ERC_logo.png" alt="ERC" />
+            </div>
+            <div class="funder-item">
+              <img src="./assets/img/NVIDIA.png" alt="NVIDIA" />
+            </div>
+            <div class="funder-item">
+              <img src="./assets/img/oxford.svg" alt="Oxford" />
+            </div>
+            <div class="funder-item">
+              <img src="./assets/img/nagoya.png" alt="Nagoya" />
+            </div>
+            <div class="funder-item">
+              <img src="./assets/img/mcml.jpg" alt="MCML" />
+            </div>
+            <div class="funder-item">
+              <img src="./assets/img/icl.png" alt="ICL" />
+            </div>
+            <div class="funder-item">
+              <img src="./assets/img/uz.png" alt="Zurich" />
+            </div>
+            <div class="funder-item">
+              <img src="./assets/img/harvard.png" alt="Harvard" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="talks" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Fun</h2>
+          <ul class="talks">
+            <li>2025-05 — CollabLLM at Citadel GQS PhD Colloquium</li>
+            <li>2024-05 — STaRK at Stanford Data Science Conference</li>
+          </ul>
+        </div>
+      </section> -->
+
+      <!-- <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+          <p>GitHub • Scholar • LinkedIn • Twitter</p>
+        </div>
+      </section> -->
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Copyright © <span id="year"></span> Jiazhen Pan.</p>
+        <a href="#top" class="back-to-top" aria-label="回到顶部">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+  <script>
+    // Fallback if JS loads late: set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  </html>
